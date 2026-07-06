@@ -29,7 +29,7 @@ def sort(lst, asc):
 Helper function to find the largest element in the list starting
 at index "start"
 """
-def find_largest(lst, start):
+def findLargest(lst, start):
     max = lst[start]
     idx = start
     for i in range(start, len(lst)):
@@ -42,7 +42,7 @@ def find_largest(lst, start):
 Helper function to find the smallest element in the list starting
 at index "start"
 """
-def find_smallest(lst, start):
+def findSmallest(lst, start):
     max = lst[start]
     idx = start
     for i in range(start, len(lst)):
