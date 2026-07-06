@@ -6,7 +6,7 @@ A collection of utilities for working with lists.
 Finds the largest value in the list.
 """
 def largest(lst):
-    return lst[find_largest(lst, 0)]
+    return lst[findLargest(lst, 0)]
 
 """
 Sorts the list according to the "natural order" of the values.
@@ -68,10 +68,11 @@ def search(lst, target):
         mid = (high + low) // 2
         if (lst[mid] == target):
             found = True
-        else (lst[mid] > target):
-            high = mid - 1
-        else (lst[mid] < target):
-            low = mid + 1
+        else:
+            if (lst[mid] > target):
+                high = mid - 1
+            else:
+                low = mid + 1
     return found
 
 """
